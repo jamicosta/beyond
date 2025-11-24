@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond - Clothing Brand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">BEYOND</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to BEYOND</h2>
+                <p>Where style meets comfort</p>
+                <button class="cta-btn" onclick="showMessage()">Shop Now</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>BEYOND is a modern clothing brand dedicated to creating quality apparel that combines comfort, style, and sustainability. Our mission is to make fashion accessible to everyone.</p>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">T-Shirt</div>
+                        <h3>Classic T-Shirt</h3>
+                        <p class="price">$24.99</p>
+                        <button class="add-to-cart" onclick="addToCart('Classic T-Shirt')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">Hoodie</div>
+                        <h3>Comfort Hoodie</h3>
+                        <p class="price">$49.99</p>
+                        <button class="add-to-cart" onclick="addToCart('Comfort Hoodie')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">Jeans</div>
+                        <h3>Slim Fit Jeans</h3>
+                        <p class="price">$59.99</p>
+                        <button class="add-to-cart" onclick="addToCart('Slim Fit Jeans')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">Sneakers</div>
+                        <h3>Urban Sneakers</h3>
+                        <p class="price">$79.99</p>
+                        <button class="add-to-cart" onclick="addToCart('Urban Sneakers')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BEYOND Clothing Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
